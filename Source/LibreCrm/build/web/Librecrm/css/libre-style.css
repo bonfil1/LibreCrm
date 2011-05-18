@@ -1,0 +1,270 @@
+/* 
+    Document   : libre-style
+    Created on : 21/03/2011, 12:34:55 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background: url(../img/background.jpg) #00070b 50% 0 no-repeat;
+    /* Otro bg, background: url(../img/f.jpg) repeat-x top left #464445;*/
+}
+#wrapper{
+    width:auto;
+    height: auto;
+    margin:0px auto;
+    padding:15px;
+    z-index: 1;
+}
+
+#titulo2{    
+    width:300px;
+    margin-left: 5px;
+    text-align:left;
+    font-size: 62px;
+    font-family: fantasy;
+    color: #cccccc;
+    z-index: 1;
+}
+#cabezera{    
+    width:  auto;
+    height: 30px;
+    margin: 0px auto 0px auto;
+}
+
+#header2{    
+    position: absolute;
+    margin-left: 0px;
+    width: 900px;
+    height: 30px;
+    text-align:left;
+    background: url(../img/header2.png) no-repeat;
+    font-family: 'Courier New',Courier,monospace;
+    font-size: 20px;
+}
+
+
+#opciones{   
+    position:       absolute;
+    width:          350px;
+    height:         30px;
+    font-size:      20px;
+    text-align:     center;
+    vertical-align: middle;
+    padding:        0px 0px 5px 0px;
+    margin-left:    945px;
+    color:          #00A2F1;
+    font-family:    Geneva,Arial,Helvetica,sans-serif;    
+}
+
+#mail_check{
+    position: absolute;
+    background: url(../img/email.png) no-repeat right;
+    width: 40px;
+    margin: 0px auto;
+    text-align: left;
+    color: #ff3333;
+}
+
+a:link{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+a:visited{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+#innerbody{
+    width:            auto;
+    border:           1px groove #9999ff;
+    background-color: #ccccff;
+    margin:           10px auto auto auto;    
+}
+
+#menu{
+    width:            200px;
+    height:           500px;
+    border:           1px groove #9999ff;
+    background-color: #9933ff;
+    z-index: 4;
+}
+
+#content{
+    display:        table;
+    width:          1000px;
+    height:         600px;
+    margin:         0px auto;
+    padding:        15px;
+    border:         1px solid #333;
+    background-color:#eee;
+    font-family:    Geneva,Arial,Helvetica,sans-serif;
+    z-index:        1;
+}
+
+#content2{
+    width:          auto;
+    height:         600px;
+    margin:         0px auto;
+    padding:        15px;
+    border:         1px solid #333;
+    background-color:#eee;
+    font-family:    Geneva,Arial,Helvetica,sans-serif;
+    z-index:        1;
+}
+
+.menus{
+    vertical-align:     top;
+    text-align:         center;
+    background-color:   #666666;
+    font-family:        Geneva,Arial,Helvetica,sans-serif;
+    color:              #FFFFFF;
+}
+
+#contentMenu{
+    display: block;
+    top:            139px;
+    width:          240px;
+    padding:        5px;
+    border:         1px solid #333;
+    background-color:#eee;
+    font-family:    Geneva,Arial,Helvetica,sans-serif;    
+}
+
+.menuItem{
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+    background-color: #cccccc;
+}
+
+.menuItem:hover{
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+    background-color: #FFFFFF;
+}
+
+.cabezera{
+    text-align: left;
+    background: #99ccff;
+}
+.cabezera:hover{
+    text-align: left;
+    background: #6699ff;
+}
+#grupo_fila1{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #00070b;
+    background-color:#eee;
+}
+
+#grupo_fila2{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #cc0033;
+    background-color:#eee;
+}
+#grupo_header{
+    display:            table-caption;
+    text-align:         center;
+    border:             1px groove #333;
+    background-color:   #99ccff;
+    font-family:        Geneva,Arial,Helvetica,sans-serif;
+    font-size:          16px;
+}
+
+#activdades{
+    display: table-cell;
+    margin-top: 20px;
+    margin-left: 0px;
+    width:50%;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;   
+    z-index: 6;       
+}
+
+#reportes{
+    display: table-cell;
+    margin-top: 20px;
+    margin-left: 530px;
+    width:50%;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 7;
+}
+
+.fila1{
+    text-align: center;
+    background: #cccccc;
+}
+.fila1:hover{
+    text-align: center;
+    background: #3399ff;
+}
+
+.fila2{
+    text-align: center;
+    background: #ffffff;
+}
+.fila2:hover{
+    text-align: center;
+    background: #3399ff;
+}
+
+
+#graficas{
+    display: table-cell;
+    margin-top: 200px;
+    width:      50%;
+    height:     50%;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;    
+}
+#graficas2{
+    display: table-cell;
+    margin-top: 200px;
+    margin-left: 500px;
+    width:      50%;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+#formulario_cuenta{
+    border:             1px dotted #333;
+    background-color:   #ffffcc;
+    margin:             0px auto;
+    vertical-align:     middle;
+}
+
+.textfields{
+    height: 20px; font-size: 13pt;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+.direccion{
+    background-color:   #FFFFFF;
+}
+
+#mensaje {
+    width:700px;
+    margin:0px auto;
+    text-align:center;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: 14px Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}

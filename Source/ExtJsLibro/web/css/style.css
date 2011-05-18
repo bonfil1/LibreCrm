@@ -1,0 +1,30 @@
+/* 
+    Document   : style
+    Created on : 20/03/2011, 04:02:18 PM
+    Author     : Jose Angel Bonfil Evia
+    Description:
+        LibreCrm Style.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+    background-color: #ffcc99;    
+    font-family: 'Courier New',Courier,monospace;   
+}
+
+.icono{    
+    background: url(../rsc/load.gif) no-repeat;
+}
+
+.dull{    
+    background: url(../rsc/dullwork.jpg) no-repeat;
+}
+
+.fuego{    
+    background: url(../rsc/fire.jpg) no-repeat;
+}
+

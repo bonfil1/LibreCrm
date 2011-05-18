@@ -1,0 +1,162 @@
+/* 
+    Document   : libre-style
+    Created on : 21/03/2011, 12:34:55 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background: url(../img/background.jpg) #00070b 50% 0 no-repeat;
+    /* Otro bg, background: url(../img/f.jpg) repeat-x top left #464445;*/
+}
+#wrapper{
+    width:auto;
+    margin:0px auto;
+    padding:15px;
+    z-index: 1;
+}
+
+#titulo2{    
+    width:300px;
+    margin-left: 5px;
+    text-align:left;
+    font-size: 62px;
+    font-family: fantasy;
+    color: #cccccc;
+    z-index: 1;
+}
+#cabezera{    
+    width:  auto;
+    height: 30px;
+    margin: 0px auto 0px auto;
+}
+
+#header2{    
+    position: absolute;
+    margin-left: 0px;
+    width: 900px;
+    height: 30px;
+    text-align:left;
+    background: url(../img/header2.png) no-repeat;
+    font-family: 'Courier New',Courier,monospace;
+    font-size: 20px;
+}
+
+#opciones{   
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 1100px;
+}
+
+
+a:link{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+a:visited{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+#innerbody{
+    width:            auto;
+    border:           1px groove #9999ff;
+    background-color: #ccccff;
+    margin:           10px auto auto auto;    
+}
+
+#menu{
+    width:            200px;
+    height:           500px;
+    border:           1px groove #9999ff;
+    background-color: #9933ff;
+    z-index: 4;
+}
+
+#content{
+    position: static;
+    width:  auto;
+    height: 400px;
+    margin: 0px auto;
+    text-align:left;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#contentMenu{
+    position: static;
+    width:  auto;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 232px;
+    padding: 5px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+.menuItem{
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+    background-color: #cccccc;
+}
+
+.menuItem:hover{
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+    background-color: #FFFFFF;
+}
+
+.cabezera{
+    text-align: left;
+    background: #99ccff;
+}
+.cabezera:hover{
+    text-align: left;
+    background: #6699ff;
+}
+
+
+#activdades{
+    position: absolute;
+    margin-top: 20px;
+    width:450px;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;   
+    z-index: 6;
+}
+
+#reportes{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 500px;
+    width:450px;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 7;
+}
+
+#graficas{
+    position: absolute;
+    margin-top: 200px;
+    width:auto;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 7;
+}
