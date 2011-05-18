@@ -1,0 +1,19 @@
+MyButtonUi = Ext.extend(Ext.Button, {
+    text: 'Iniciar',
+    width: 90,
+    autoScroll: true,
+    type: 'submit',
+    stateful: true,
+    id: 'Iniciar',
+    handler: handlerWrapper,
+    scope: this,     
+    initComponent: function() {
+        MyButtonUi.superclass.initComponent.call(this);	 
+    }
+});
+
+var handlerWrapper = function(){
+	MyButtonUi.getForm().getEl().dom.action = 'prueba.html';
+	MyButtonUi.getForm().getEl().dom.method = 'POST';
+     MyButtonUi.getForm().submit();
+};

@@ -1,0 +1,4 @@
+<script type="text/javascript" src="MyWindow.ui.js"></script>
+<script type="text/javascript" src="MyWindow.js"></script>
+<script type="text/javascript" src="MyForm.ui.js"></script>
+<script type="text/javascript" src="MyForm.js"></script>

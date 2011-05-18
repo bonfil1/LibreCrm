@@ -1,0 +1,54 @@
+MyFormUi = Ext.extend(Ext.form.FormPanel, {
+    height: 133,
+    labelPad: 6,
+    hideParent: true,
+    hideBorders: true,
+    border: false,
+    frame: true,
+    standardSubmit: true,
+    method: 'POST',
+    initComponent: function() {
+        this.initialConfig = Ext.apply({
+            standardSubmit: true,
+            method: 'POST'
+        }, this.initialConfig);
+        this.items = [
+            {
+                xtype: 'textfield',
+                anchor: '100%',
+                fieldLabel: 'Nombre',
+                height: 30
+            },
+            {
+                xtype: 'textfield',
+                fieldLabel: 'Contraseña',
+                anchor: '100%',
+                inputType: 'password',
+                invalidText: 'Contraseña invalida',
+                height: 30
+            },
+            {
+                xtype: 'button',
+                text: 'Iniciar',
+                width: 90,
+                autoScroll: true,
+                type: 'submit',
+                stateful: true,
+			handler: function(){
+				MyFormUi.getForm().getEl().dom.action = 'prueba.html';
+				MyFormUi.getForm().getEl().dom.method = 'POST';
+     				MyFormUi.getForm().submit();
+			},
+                id: 'Iniciar'
+            },
+            {
+                xtype: 'button',
+                text: 'Reiniciar',
+                width: 90,
+                autoScroll: true,
+                type: 'reset'
+            }
+        ];
+        MyFormUi.superclass.initComponent.call(this);
+    }
+});

@@ -1,0 +1,167 @@
+{
+    "name": "project.xds",
+    "projectId": "E795AD4B-FFD1-4FDF-9B24-C982BD6C0D06",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.2.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.1",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "MyWindow",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Inicio de sesion",
+                "width": 379,
+                "height": 181,
+                "tpl": "",
+                "autoScroll": "-ext-undefined-",
+                "hideParent": "-ext-undefined-",
+                "hideBorders": true,
+                "layout": "absolute",
+                "footer": "-ext-undefined-",
+                "unstyled": "-ext-undefined-",
+                "closable": false,
+                "collapsed": "-ext-undefined-",
+                "constrain": "-ext-undefined-",
+                "constrainHeader": "-ext-undefined-",
+                "titleCollapse": "-ext-undefined-",
+                "shim": "-ext-undefined-"
+            },
+            "cn": [
+                {
+                    "id": "MyUserComponent",
+                    "cid": "usercomponent",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "jsClass": "MyForm",
+                        "userXType": "myform",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "userComponent": "MyForm"
+                }
+            ]
+        },
+        {
+            "id": "MyForm",
+            "cid": "form",
+            "jsClass": "MyForm",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "-ext-undefined-",
+                "height": 140,
+                "hideLabels": "-ext-undefined-",
+                "labelWidth": "-ext-undefined-",
+                "labelAlign": "-ext-undefined-",
+                "labelPad": 6,
+                "autoScroll": "-ext-undefined-",
+                "autoShow": "-ext-undefined-",
+                "hideParent": true,
+                "hideBorders": true,
+                "forceLayout": "-ext-undefined-",
+                "border": false,
+                "disabled": "-ext-undefined-",
+                "draggable": "-ext-undefined-",
+                "frame": true
+            },
+            "userXType": "myform",
+            "cn": [
+                {
+                    "id": "MyTextField",
+                    "cid": "textfield",
+                    "jsClass": "MyTextField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "anchor": "100%",
+                        "fieldLabel": "Nombre",
+                        "height": 30
+                    }
+                },
+                {
+                    "id": "MyTextField1",
+                    "cid": "textfield",
+                    "jsClass": "MyTextField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "fieldLabel": "Contraseña",
+                        "anchor": "100%",
+                        "inputType": "password",
+                        "invalidText": "Contraseña invalida",
+                        "height": 30
+                    }
+                },
+                {
+                    "id": "MyContainer1",
+                    "cid": "container",
+                    "jsClass": "MyContainer1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "height": 61,
+                        "layout": "absolute"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "layout": "column",
+                                "autoScroll": true,
+                                "height": 41,
+                                "activeItem": 0,
+                                "width": 200,
+                                "x": 150,
+                                "y": 10
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyButton",
+                                    "cid": "button",
+                                    "jsClass": "MyButton",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Iniciar",
+                                        "width": 100,
+                                        "autoScroll": true,
+                                        "type": "submit",
+                                        "clickEvent": "-ext-undefined-",
+                                        "id": "Iniciar",
+                                        "stateful": true,
+                                        "stateEvents": "prueba.html"
+                                    },
+                                    "userXType": "mybutton"
+                                },
+                                {
+                                    "id": "MyButton1",
+                                    "cid": "button",
+                                    "jsClass": "MyButton1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Reiniciar",
+                                        "width": 90,
+                                        "autoScroll": true,
+                                        "type": "reset",
+                                        "region": "center"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}
