@@ -1,0 +1,108 @@
+body{
+    background-color: #ffffff;    
+}
+
+h1{
+    color: #000000;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+a:link{
+    color: #0099ff;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+a:visited{
+    color: #0099ff;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+th{
+    background-color: #cccccc;
+    color:            #0099ff;
+    font-family:      Geneva,Arial,Helvetica,sans-serif;
+    font-size:        13;    
+}
+
+#Content {
+    width:700px;
+    margin:0px auto;
+    text-align:center;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#ControlPanel{
+    width:800px;
+    margin:30px auto;
+    text-align:center;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#des{
+    position: absolute;
+    margin-left: 50px;
+    text-align: left;    
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 2;
+}
+
+#fecha{
+    position: absolute;
+    width:250px;
+    margin-left: 65px;
+    text-align:center;
+    padding:10px;
+    border: 1px dashed #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 2;
+}
+
+#hora{
+    position: absolute;
+    width:290px;
+    margin-left: 350px;
+    text-align:center;
+    padding:10px;
+    border: 1px dashed #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 2;
+}
+
+#cambios{
+    width:700px;
+    margin:0px auto;
+    text-align:center;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#guardar{
+    position: absolute;
+    width:40px;
+    margin-left: 650px;
+    text-align:center;
+    padding:5px;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 2;
+}
+
+#cargando{
+    position: absolute;
+    margin-left: 850px;
+   
+}

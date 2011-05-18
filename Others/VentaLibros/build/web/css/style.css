@@ -1,0 +1,91 @@
+body{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: url(../images/bg.jpg) center top no-repeat #1659BF;
+    line-height: 17px;
+}
+#top { width: 1014px;
+       height: 10px;
+       background:url(../images/top.png) left top no-repeat; }
+
+#bot { width: 1014px;
+       height: 10px;
+       background:url(../images/bot.png) left bottom no-repeat; }
+#main{
+    width:  1014px;
+    margin: auto;
+}
+#top_box {
+    height: 305px;
+    width: 1014px;
+    background: #FFFFFF;
+}
+#header {
+    width:1014px;
+    padding: 0px 0px 0px 0px;
+    background: #FFFFFF;
+}
+#buttons{
+    width: 1000px;
+    text-align:center;
+    padding-left:10px;
+    padding-top: 20px;
+    height: 64px;
+    background: url(../images/top.gif) center  no-repeat;
+}
+#wrapper{
+    width:  1014px;
+    height: 400px;
+    background: #FFFFFF;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+#wrapper2{
+    width:  1014px;
+    height: 900px;
+    background: #FFFFFF;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.boton-res{
+    width: 25px;
+    height: 25px;
+    padding-top: 0px;
+    text-align:center;
+    background: url(../images/icons/reiniciar.png) center no-repeat;
+}
+
+#left{
+    width: 592px;
+    margin: 0px 0px 0px 11px;
+    float: left;
+    color:#000000;
+}
+.panel_log{
+    background: url(../images/bg_tit.png) left top no-repeat;
+    padding: 0px 8px 0px 8px;
+    margin: 20px 0px 0px 0px;
+}
+.panel_busqueda{
+    background: url(../images/head_gen.png) left top no-repeat;    
+    padding: 10px 8px 0px 8px;
+    margin: 0px 0px 0px 0px;
+}
+
+#right{
+    float: right;
+    width: 378px;
+    margin-right: 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.img {
+    float:left;
+    margin: 4px 16px 7px 0px;
+}
+
+
+
+
