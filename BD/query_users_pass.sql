@@ -1,0 +1,2 @@
+INSERT INTO librecrm.users (user_name, password, `name`, last_name, report_to, is_admin, description, date_entered, date_modified, modified_user_id, created_by, last_login, category_id, phone_home, phone_mobile, phone_work, phone_other, phone_fax, adress_street, adress_city_id, adress_state_id, adress_country_id, email_id)
+VALUES ('pepez', sha1("master12"), 'jose', 'bonfil', '1', false, 'usuario de prueba de contraseñas', '2011-05-11 10:26:49.872', '2011-05-11 10:26:50.983', '1', '1', '2011-05-11 10:26:56.942', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
