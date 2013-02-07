@@ -18,53 +18,56 @@
 
         <!--Styles-->
         <style type="text/css">
-            body{ margin:0; padding:0; background:#efefef; font-family:Georgia, Times, Verdana, Geneva, Arial, Helvetica, sans-serif; }
-            div#mother{ margin:0 auto; width:943px; height:572px; position:relative; }
-            div#errorBox{ background: url(Librecrm/img/pckImgs/bg404.png) no-repeat top left; width:943px; height:572px; margin:auto; }
-            div#errorText{ color:#39351e; padding:146px 0 0 446px }
-            div#errorText p{ width:303px; font-size:14px; line-height:26px; }
-            div.link{ /*background:#f90;*/ height:50px; width:145px; float:left; }
-            div#home{ margin:20px 0 0 444px;}
-            div#contact{ margin:20px 0 0 25px;}
-            h1{ font-size:40px; margin-bottom:35px; }
-        </style>
-
-        <!--jQuery-->
-        <script type="text/javascript" src="Librecrm/js/jquery-1.5.1.js"></script>
-        <script type="text/javascript">
-            $(document).ready( function(){
-                var bodyHeight 		= $(window).height();
-                var contentHeight	= $("#mother").height();
-                var newHeight;
-
-                if ( bodyHeight < contentHeight ){
-                    var newHeight = contentHeight - bodyHeight;
-
-                } else {
-                    var newHeight = bodyHeight - contentHeight;
-
-                }
-                newHeight = newHeight / 2;
-                $("body").css({marginTop:newHeight});
-            });
-        </script>
+            .systemException {
+                border: 1px outset lightgrey;
+                padding: 3px;
+                background-color: lightgrey;
+                text-align: left;
+                overflow: auto;
+                font-family: Verdana, Helvetica, sans-serif;
+                font-size: .8em;
+            }
+            .systemException div {
+                border: 1px inset lightgrey;
+                padding: 4px;
+            }
+            .systemException h1 {
+                background-color: #154268;
+                padding: 4px;
+                color: #fff;
+                margin: 0 0 3px 0;
+                font-size: 1.15em;
+            }
+            .systemException h2 {
+                font-size: 1.1em;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            .systemException pre, .systemException p {
+                margin: 0;
+            }
+            .systemException pre {
+                font-size: .85em;
+                font-family: "Courier New";
+            }
+        </style>        
     </head>
     <body >
-        <div id="mother">
-            <div id="errorBox">
-                <div id="errorText">
-                    <h1>Ups! ha ocurrido un error con la aplicacion<br /></h1>
-                    <p>${sessionScope.error}</p>
-                    <p>Sucedio un error durante la navegacion </p>
-                    <p>Intenta con uno de estos botones</p>
-                </div>
-                <a href="/LibreCrm/SvLibreCrm" title="Inicio">
-                    <div class="link" id="home"></div>
-                </a>
-                <a href="/LibreCrm/SvLibreCrm?link=contacto" title="Contacto...">
-                    <div class="link" id="contact"></div>
-                </a>
+        <div class="systemException">
+            <h1>Fatal error: ${requestScope.error}<br /></h1>
+            <div>
+                <b>Error:</b><pre>${requestScope.error}</pre>
+                <b>Detailed error:</b><pre>${requestScope.errorDetail}</pre>
+                <br />
+                <p>Sucedio un error durante la navegacion </p>
+                <p>Intenta con uno de estos botones</p>
             </div>
+            <a href="/LibreCrm/SvLibreCrm?link=inicio" title="Inicio">
+                <h2>Inicio</h2>
+            </a>
+            <a href="/LibreCrm/SvLibreCrm?link=contacto" title="Contacto...">
+                <h2>Contacto con el staff de librecrm</h2>
+            </a>
         </div>
     </body>
 </html>

@@ -18,12 +18,39 @@
         <!--Styles-->
         <link rel="stylesheet" href="Librecrm/css/libre-style.css" type="text/css" />
         <link rel="stylesheet" href="Librecrm/css/nyroModal.css" type="text/css" />
+        <link rel="stylesheet" href="Librecrm/css/StyleFeed.css" type="text/css" />
+        <link rel="stylesheet" href="Librecrm/css/SlideStyle.css" type="text/css" />
+        <!--Styles MarkItUP-->
+        <link rel="stylesheet" href="Librecrm/plugins/markitup/skins/markitup/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="Librecrm/plugins/markitup/sets/html/style.css" type="text/css" media="screen" />
+
 
         <!--JavaScript-->
         <script type="text/javascript" src="Librecrm/js/jquery-1.5.1.js"></script>
+        <!--JavaScript MarkitUP-->
+        <script type="text/javascript" src="Librecrm/plugins/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="Librecrm/plugins/markitup/sets/html/set.js"></script>
+        <!--NyroModal-->
         <script type="text/javascript" src="Librecrm/js/jquery.nyroModal.custom.min.js"></script>
+        <!--SliderComponentes-->
+        <script type="text/javascript" src="Librecrm/plugins/Slider/src/jquery.collapse.js"></script>
+        <script type="text/javascript" src="Librecrm/plugins/Slider/src/jquery.cookie.js"></script>
+        <script type="text/javascript">document.documentElement.className = "js";</script>
+        <!--Text Slide For the LibreCrm Feed-->
+        <script type="text/javascript" src="Librecrm/js/jquery.wslide.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                $("#slide").wslide({
+                    width: 950,
+                    height: 250,
+                    col: 4,
+                    duration: 500,
+                    effect: 'easeOutExpo'
+                });
+            });
+        </script>
     </head>
-    <body>
+    <body>        
         <form action="/LibreCrm/SvLibreCrm" method="POST">
             <div id="wrapper">
                 <div id="titulo2">LAT CRM</div>
@@ -31,13 +58,17 @@
                     <div id="header2">Bienvenido</div>
                     <div id="opciones">
                         <div id="mail_check">1</div>
-                        &nbsp;Bienvenido(a): &nbsp;<a href="/LibreCrm/SvLibreCrm?link=detalles">${sessionScope.nickname}</a> | 
+                        &nbsp;Bienvenido(a): &nbsp;
+                        <a href="/LibreCrm/SvLibreCrm?link=detalles">${sessionScope.nickname}</a> |
+                        <c:if test="${sessionScope.isadmin == 1}">
+                            <a href="/LibreCrm/SvLibreCrm?link=administrar" class="nyroModal">CP</a> |
+                        </c:if>                        
                         <a href="/LibreCrm/SvLibreCrm?link=salir&sesion=cerrar" class="nyroModal">Salir</a>
                         <script type="text/javascript">
                             $(function() {
                                 $('.nyroModal').nyroModal();
                             });
-                        </script>
+                        </script>                        
                     </div>
                 </div>
                 <div id="innerbody">
@@ -53,22 +84,22 @@
                                             <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=resumen">Resumen</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Cuentas</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=cuentas">Cuentas</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Contactos</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=contactos">Contactos</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Oportunidades</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=oportunidades">Oportunidades</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Emails</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=emails">Emails</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Campañas</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=campañas">Campañas</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="menuItem"><a href="#">Reportes</a></td>
+                                            <td class="menuItem"><a href="/LibreCrm/SvLibreCrm?link=reportes">Reportes</a></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -78,61 +109,50 @@
                                     <div id="grupo_header">
                                         Bievenido a LATCRM
                                     </div>
-                                    <div id="activdades">
-                                        Actividades
-                                        <table border="0" width="100%" id="actividad">
-                                            <thead>
-                                                <tr>
-                                                    <th class="cabezera">Actividad de</th>
-                                                    <th class="cabezera">Nombre Actividad</th>
-                                                    <th class="cabezera">Fecha</th>
-                                                </tr>
-                                            </thead>
-                                            <%-- Filas --%>
-                                            <%--
-                                                Recogemos los valores de cada pedido
-                                            --%>
-                                            <tbody>
-                                                <c:choose>
-                                                    <c:when test="${not empty sessionScope.hayActividades}">
-                                                        <c:forEach var="fila" items="${sessionScope.actividadCuenta}">
-                                                            <tr class="fila1">
-                                                                <td>Cuentas</td>
-                                                                <td>${fila.name}</td>
-                                                                <td>${fila.dateEntered}</td>
-                                                            </tr>                                                            
-                                                        </c:forEach>
-                                                        <c:forEach var="fila_camp" items="${sessionScope.actividadCampañas}">
-                                                            <tr>
-                                                                <td class="fila2">Campañas</td>
-                                                                <td class="fila2">${fila_camp.name}</td>
-                                                                <td class="fila2">${fila_camp.date_entered}</td>
-                                                            </tr>
-                                                        </c:forEach>
-                                                    </c:when>
-                                                    <c:otherwise>
-                                                        <tr>
-                                                            <td>No hay </td>
-                                                            <td>Actividad reciente</td>
-                                                        </tr>
-                                                    </c:otherwise>
-                                                </c:choose>
-                                            </tbody>
-                                        </table>
+                                    <div id="grupo_fila1">
+                                        <div id="slider_wrapper">
+                                            <!-- .slider -->
+                                            <ul id="slide">
+                                                <c:forEach var="feed" items="${sessionScope.comentarios}">
+                                                    <li>                                                        
+                                                        <h2>${feed.title}</h2>
+                                                        <p>${feed.comments}</p>
+                                                        <div class="fecha"> Agregado por <c:if test="${feed.is_admin == 1}">Administrador</c:if>&nbsp; ${feed.first_name} ${feed.last_name} el ${feed.date_entered}</div>
+                                                    </li>
+                                                </c:forEach>
+                                            </ul><!-- .slider -->
+                                        </div>
                                     </div>
-                                    <div id="reportes">
-                                        Reportes
-                                        <table border="0" width="100%">
-                                            <tr>
-                                                <th class="cabezera">Reporte</th>
-                                                <th class="cabezera">Fecha</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Reporte 1</td>
-                                                <td>01/01/2011</td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                                    <div id="grupo_fila2">
+                                        <div class="slide">
+                                            <h3>Comentar</h3>
+                                            <div id="formulario">
+                                                <label for="titulo_cmt">Titulo</label>
+                                                <input type="text" name="titulo" size="60">
+                                                <br/>
+                                                <textarea id="comentario" name="comentario" cols="80" rows="20">
+                                                </textarea>
+                                                <br/>                                                
+                                                <input type="submit" value="Comentar" name="boton" >
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript" charset="utf-8">
+                                            $(".slide").collapse({show: function(){
+                                                    this.animate({
+                                                        opacity: 'toggle',
+                                                        height: 'toggle'
+                                                    }, 300);
+                                                },
+                                                hide : function() {
+                                                    this.animate({
+                                                        opacity: 'toggle',
+                                                        height: 'toggle'
+                                                    }, 300);
+                                                }
+                                            });
+                                            $('#comentario').markItUp(mySettings);
+                                        </script>
+                                    </div>                                    
                                 </div>
                             </td>
                         </tr>

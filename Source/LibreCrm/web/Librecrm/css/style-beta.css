@@ -1,0 +1,233 @@
+/* 
+    Document   : style-beta
+    Created on : 5/06/2011, 03:05:08 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+    background: url(../img/background.jpg) #00070b 50% 0 no-repeat;
+}
+
+a:link{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+a:visited{
+    color: #00A2F1;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    text-decoration:none;
+}
+
+.tWrapper{
+    text-align:left;
+    font-size: 82px;
+    font-family: fantasy;
+    color: #ffffff;    
+}
+
+.tMenu{
+    font-size: 14px;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    background: url(../img/header2.png) no-repeat;
+    color: #00A2F1;
+}
+
+.encabezado{   
+    text-align:left;    
+    font-family: 'Courier New',Courier,monospace;
+    font-size: 20px;
+}
+
+#mail_check{
+    background: url(../img/email.png) no-repeat right;
+    width: 40px;
+    height: 40px;
+    margin: 0px auto;
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.tColLeft{
+    font-size:        14px;
+    font-family:      Geneva,Arial,Helvetica,sans-serif;
+    background-color: #ffffff;
+    color: #00A2F1;    
+}
+
+#tColMenu{
+    position: static;
+    top:10%;
+    margin-top: -400px;
+}
+.tColRigth{
+    display:        table;
+    background-color:#eee;
+    font-family:    Geneva,Arial,Helvetica,sans-serif;
+    z-index:        1;
+}
+#grupo_fila1{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #00070b;
+    background-color:#eee;
+}
+
+#grupo_fila2{
+    display:    table-row;
+    width:      auto;
+    border:     1px dashed #cc0033;
+    background-color:#eee;
+    text-align: left;
+}
+#grupo_header{
+    display:            table-caption;
+    text-align:         center;
+    background:         #333;
+    color:              #fff;
+    font-family:        Geneva,Arial,Helvetica,sans-serif;
+    font-size:          22px;
+}
+
+#activdades{
+    display: table-cell;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;    
+}
+
+#reportes{
+    display: table-cell;
+    margin-top: 20px;
+    margin-left: 530px;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    z-index: 7;
+}
+
+#slider_wrapper{
+    display: table-cell;
+    width:auto;
+    height: 50%;
+}
+
+#addcomment{
+    margin: 0px auto;
+    width:      50%;
+    height:     70%;
+    text-align:center;
+}
+
+.fila1{
+    text-align: center;
+    background: #cccccc;
+}
+.fila1:hover{
+    text-align: center;
+    background: #3399ff;
+}
+
+.fila2{
+    text-align: center;
+    background: #ffffff;
+}
+.fila2:hover{
+    text-align: center;
+    background: #3399ff;
+}
+
+
+#graficas{
+    display: table-cell;
+    margin-top: 200px;
+    width:      auto;
+    height:     50%;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+#graficas2{
+    display: table-cell;
+    text-align:center;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+#formulario_cuenta{
+    border:             2px dashed #333;
+    background-color:   #eee;
+    margin:             0px auto;
+    vertical-align:     middle;
+}
+
+.textfields{
+    height: 20px; font-size: 13pt;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+.direccion{
+    background-color:   #FFFFFF;
+}
+
+#mensaje {
+    width:700px;
+    margin:0px auto;
+    text-align:center;
+    padding:15px;
+    border: 1px solid #333;
+    background-color:#eee;
+    font-family: 14px Geneva,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#cuentas_toolbar{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #00070b;
+    background-color:#eee;
+}
+
+#cuentas{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #00070b;
+    background-color:#eee;
+}
+
+#cToolbar{
+    display:            table-cell;
+    width:              auto;
+    height:             15px;
+    text-align:         right;
+    border:             1px solid #333;
+    background-color:   #ccc;
+    z-index:            6;
+}
+
+#cuentas_layout{
+    display:            table-cell;
+    margin-top:         20px;
+    margin-left:        0px;
+    width:              auto;
+    border:             1px solid #333;
+    background-color:   #eee;
+    z-index:            6;
+}

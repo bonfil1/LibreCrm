@@ -18,7 +18,7 @@
               href="http://localhost/extjs/resources/css/ext-all.css" />
         <link rel="stylesheet" type="text/css" href="http://localhost/extjs/resources/css/xtheme-gray.css" />
         <%-- LibreCrm CSS--%>
-        <link rel="stylesheet" href="Librecrm/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="Librecrm/css/login_style.css" type="text/css" />
         <link rel="icon" type="image/x-icon" href="Librecrm/img/pckImgs/favicon.ico" />
         <link rel="shortcut icon" type="image/x-icon" href="Librecrm/img/pckImgs/favicon.ico" />
 
@@ -51,7 +51,7 @@
             </div>
         </c:if>
         <div id="footer">
-            <p>&copy; 2011. All Rights Reserved. Design by Jose A. Bonfil Evia, Downloads & documentantion can be found at <a href="https://github.com/bonfil1/LibreCRm">My personal GitHub</a>.</p>
+            <p>&copy; 2011. All Rights Reserved. Design by Jose A. Bonfil Evia, Downloads & documentantion can be found at  <a href="https://github.com/bonfil1/LibreCRm">My personal GitHub</a>.</p>
         </div>
     </body>
 </html>

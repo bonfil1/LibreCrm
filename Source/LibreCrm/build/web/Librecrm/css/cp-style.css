@@ -1,0 +1,91 @@
+/* 
+    Document   : cp-style
+    Created on : 20/06/2011, 02:04:49 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#cabezera{
+    display:            table-caption;
+    text-align:         center;
+    background-color:   #eee;
+    color:#666;
+    letter-spacing:-1px;
+    font-weight:normal;
+}
+
+#fila1{
+    display:    table-row;
+    margin:     0px auto;
+    width:      auto;
+    border:     1px dashed #00070b;
+    background-color:#eee;
+}
+
+#fila2{
+    display:    table-row;
+    width:      auto;
+    border:     1px dashed #cc0033;
+    background-color:#eee;
+    text-align: left;
+}
+
+#inicio{
+    display: table-cell;
+    width:50%;
+    height: 50%;
+    text-align:center;
+    vertical-align: middle;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 22px;
+}
+
+.home{
+    width: 128px;
+    height: 128px;
+    margin: 0px auto;
+    background: url(../img/menu/inicio.png) 50% 0 no-repeat;
+}
+
+.home:hover{
+    width: 128px;
+    height: 128px;
+    margin: 0px auto;
+    background: url(../img/menu/inicio_hover.png) 50% 0 no-repeat;
+}
+
+#usuarios{
+    display: table-cell;
+    width:50%;
+    height: 50%;
+    text-align:center;
+    vertical-align: middle;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 22px;
+}
+
+#comentarios{
+    display: table-cell;
+    width:50%;
+    height: 50%;
+    text-align:center;
+    vertical-align: middle;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 22px;
+}
+
+#config{
+    display: table-cell;
+    width:50%;
+    height: 50%;
+    text-align:center;
+    vertical-align: middle;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    font-size: 22px;
+}

@@ -1,0 +1,47 @@
+/* 
+    Document   : librecrmforms
+    Created on : 31/05/2011, 06:28:59 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+label, input[type="text"]{
+    float:left;
+    display:block;
+}
+label
+{
+    margin-right: 5px;
+}
+.field{
+    width:100%;
+    overflow:auto;
+    margin:5px 0px;
+}
+
+label{
+    margin-top:4px;
+    margin-right: 8px;
+    display: block;
+    float:left;
+}
+.rowElem{
+    clear:both;
+    padding:4px 0px;
+}
+.subElem{
+    clear:both;
+    text-align: right;
+    padding:4px 0px;
+}
+
+.select{
+    overflow: hidden;
+    cursor:pointer;
+}

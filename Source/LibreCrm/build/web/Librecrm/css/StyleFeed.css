@@ -1,0 +1,30 @@
+/* 
+    Document   : StyleFeed
+    Created on : 27/05/2011, 12:48:15 PM
+    Author     : Pepe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#slide li{
+    background: #eee;;
+    padding: 5px;
+    color: #000000;
+    text-align: center;
+}
+#slide h2{
+    color:#666; letter-spacing:-1px; font-weight:normal;
+}
+#slide p{
+    color:#333333; font-size: 17px;
+}
+#slide-menu a.wactive{
+    padding: 0px 2px;
+    background: #000000;
+    color: #eeeeee;
+}

@@ -58,5 +58,6 @@ public class BeanSesionUsuario {
     public void cerrarConexion()
             throws java.sql.SQLException {
         bd.cerrarConexion();
+        System.out.println("BeanSesionUsuario Cerrado");
     }
 }
